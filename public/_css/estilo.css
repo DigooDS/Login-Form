@@ -1,0 +1,178 @@
+
+/* Configuração geral */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Oxanium', sans-serif;
+}
+
+/* Configuração de elementos gerais (comuns nos 3 arquivos html) e especícos do index.html */
+div.login-box {
+    position: relative;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 15px 15px 45px rgba(255,255,255,.2);
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.5);
+}
+
+div.bg:after {
+    content:'';
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    bottom: 0;
+}
+
+div.bg:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/_img/bg.jpeg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: increase 30s linear 10ms infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+    z-index: -2;
+}
+
+div.login-box h1 {
+    font-weight: 500;
+    text-align: center;
+    color: #cddc39;
+    text-shadow: 3px 3px 6px rgba(0,0,0,.8);
+    float: center;
+    font-size: 32px;
+    border-bottom: 3px solid #cddc39;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 1px 0;
+}
+
+div.textbox {
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #cddc39;
+}
+
+div.textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+    color: #cddc39;
+    text-shadow: 3px 3px 6px rgba(0,0,0,.2);
+}
+
+div.textbox input {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    width: 80%;
+    float: left;
+    margin: 0px 10px;
+}
+
+div.textbox input::placeholder {
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(238, 238, 238);
+}
+
+button.btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #cddc39;
+    border-radius: 1px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 8px 0px 15px 0px;
+    transition: 0.4s;
+}
+
+button.btn:hover {
+    margin: 8px 0px 15px 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 6px rgba(0,0,0,.2);
+}
+
+footer {
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+    text-align: center;
+    color: white;
+    margin-top: auto;
+    position: relative;
+    margin-top: 900px;
+}
+
+@keyframes increase {
+    0%{transform:scale(1)}
+    100%{transform:scale(1.3)}
+}
+
+
+/* Configiração de elementos que são diferentes referente a página de erro - error.html */
+p {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Configiração de elementos que são diferentes referente a página de boas-vindas - welcome.html */
+div.welcome-box {
+    position: relative;
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 15px 15px 45px rgba(255,255,255,.2);
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.5);
+}
+
+div.welcome-box h1 {
+    font-weight: 500;
+    text-align: center;
+    color: #cddc39;
+    text-shadow: 3px 3px 6px rgba(0,0,0,.8);
+    float: center;
+    font-size: 32px;
+    border-bottom: 3px solid #cddc39;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 1px 0;
+}
