@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h1 align="center">
   Login-Form
 </h1>
@@ -46,10 +46,4 @@ Neste projeto, pratiquei técnicas de **front-end** como background animado (efe
 ---
 
 <i>Desenvolvido por RodrigoDS</i> 🤓
-=======
-# Login-Form
-Login-Form that I've created for practicing CSS, JS and nodeJS.
 
-In this project I practiced front-end techniques like background animation (zoom-effect), button animation and also clicks with sound effects.
-I also prepared the server (quite simply) to practice back-end with JS and nodeJS. I used dependencies like express, nunjucks and nodemon.
->>>>>>> 4ddc31ee61c9218d1d81f4df4c0b9fbf8795ee98
